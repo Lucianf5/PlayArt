@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags obrigatórias-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        .tm-social {
+            width: 55px;
+            height: 55px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div style="background-image: url('assets/img/backgroundhollow.jpg'); background-attachment: fixed, scroll;
+    background-repeat: no-repeat, repeat-y;">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #330055;">
+            <a class="navbar-brand" href="index.html ">Michaelis Games</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Jogos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #4d087a;">
+                            <a class="dropdown-item text-muted" href="#">Blasphemous</a>
+                            <a class="dropdown-item text-muted" href="#">Bloodstained</a>
+                            <a class="dropdown-item text-muted" href="#">Dead Cells</a>
+                            <a class="dropdown-item text-muted" href="#">Hades</a>
+                            <a class="dropdown-item text-muted" href="#">Hollow Knight</a>
+                            <a class="dropdown-item text-muted" href="#">Ori</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Minhas Pixel Arts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Minhas Histórias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comunidade</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </nav>
+        <!-- /NavBar -->
+
+
+        <!-- Carousel -->
+
+        <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/img/Ori1600.jpg" alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/hollowknight1600.jpg" alt="Segundo Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/DeadCells1600.jpg" alt="Terceiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/Hades1600.jpg" alt="Quarto Slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+        <!-- /Carousel -->
+
+        <!-- Jumbotron -->
+
+        <div class="jumbotron" style="background-color: #5f15b4;border-bottom-left-radius: 30%; border-bottom-right-radius: 30%; border-bottom-style: inset; border-color: blueviolet;">
+            <h1 class="display-4 text-light text-center">A arte dos jogos 2D</h1>
+            <p class="lead text-light text-center mt-5"> É maravilhoso, um universo que eu amo e pretendo explorar cada
+                vez mais,
+                minha imersão nesse estilo de jogo é maior que na maioria dos jogos com modelagem 3D.
+                Se engana aquele que pensa que jogos 2D são "feios" ou trabalho de gente preguiçosa.
+                Jogos 2D podem ser complexos, lindos, com histórias bem escritas e bem executadas, e tem
+                um publico fiel e que ama, mesmo que nem tão popular no geral. Na maioria das vezes quem
+                tem um apego maior por essa arte é quem teve seus primeiros contatos com jogos nesse estilo.
+
+            </p>
+        </div>
+
+        <!-- /Jumbotron -->
+
+        <!-- Cards -->
+        <div class="container">
+            <div class="card-deck">
+                <div class="card" style="background-color: rgb(0, 0, 0); border-radius: 15%;">
+                    <img class="card-img-top" src="assets/img/cardhn.jpg" alt="Imagem de capa do card" style="border-radius: 20%;" >
+                    <div class="bg-image card shadow-1-strong"
+                        style="background-image: url('assets/img/hollowknight1600.jpg'); border-radius: 25%;">
+                        <h5 class="card-title text-light text-center">Hollow Knight</h5>
+                        <p class="card-text text-light text-center">Hollow Knight é um game de ação e aventura inspirado em clássicos como Metroid e Castlevania, mas principalmente na popular série Dark Souls. O título traz um pequeno cavaleiro em uma jornada para selar uma infecção maléfica capaz de destruir todo o seu mundo.</p>
+                    </div>
+                </div>
+                <div class="card" style="background-color: rgb(13, 115, 170); border-radius: 15%;">
+                    <img class="card-img-top" src="assets/img/origame.jpg" alt="Imagem de capa do card" style="border-radius: 20%;">
+                    <div class="bg-image card shadow-1-strong"
+                        style="background-color: #0d73aa; border-radius: 25%; border-color: #0d73aa;">
+                        <h5 class="card-title text-light text-center">Ori</h5>
+                        <p class="card-text text-light text-center"> Se divide em 2 jogos Ori and the Blind Forest e Ori and the Will of the Wisps, esses são jogos de ação e aventura com progressão e puzzles. O jogador em ambos os games controla um guardião espiritual feito de luz chamado Ori, um dos muitos filhos da Árvore do Espírito, que protegia a floresta de Nibel.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" style="background-color: rgb(0, 0, 0); border-radius: 15%;">
+                    <img class="card-img-top" src="assets/img/cardhades.jpg" alt="Imagem de capa do card" style="border-radius: 20%;">
+                    <div class="bg-image card shadow-1-strong"
+                        style="background-color: black; border-radius: 25%;">
+                        <h5 class="card-title text-light text-center">Hades</h5>
+                        <p class="card-text text-light text-center">Hades é um jogo eletrônico roguelike de RPG de ação. Os jogadores controlam Zagreu, o filho de Hades, enquanto ele tenta escapar do Submundo para chegar ao Monte Olimpo, às vezes auxiliado por presentes dados a ele por outros Olimpianos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /Cards -->
+
+            <!-- Texto e Video -->
+
+            <div class="row mt-5 mb-5">
+                <div class="col-md-12 text-center text-light">
+                    <h3>OST - Hollow Knight + Gods & Nightmares</h3>
+                    <p>Para começar bem essa incrivel aventura por um universo mágico, nada melhor que um tema musical
+                        para
+                        essa jornada.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IWZktANV-D8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+            </div>
+
+
+            <!-- Footer -->
+            <hr>
+            <footer>
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <a href="https://www.linkedin.com/in/lucianofn/" target="_blank"> <img class="p-3 tm-social"
+                                src="assets/img/linkedin.png" alt="Logo do linkedin"></a>
+                        <a href="https://www.instagram.com/lucian_michaeliz/" target="_blank"><img class="p-3 tm-social"
+                                src="assets/img/instagram.png" alt="Logo do instagram"></a>
+                        <a href="https://github.com/Lucianf5" target="_blank"><img class="p-3 tm-social"
+                                src="assets/img/github.png" alt="Logo do github"></a>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center text-light">
+                            Todos os direitos reservados: Luciano Nascimento &copy;
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </footer>
+
+        </div>
+        <!-- /Footer -->
+
+
+        <!-- Scripts necessarios para o uso do Bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
