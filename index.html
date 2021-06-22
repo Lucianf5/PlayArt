@@ -18,7 +18,6 @@
             width: 55px;
             height: 55px;
         }
-
     </style>
 </head>
 
@@ -26,7 +25,8 @@
     <!-- NavBar -->
     <div style="background-image: url('assets/img/backgroundhollow.jpg'); background-attachment: fixed, scroll;
     background-repeat: no-repeat, repeat-y;">
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #330055;">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+            style="background-color: #330055; background-attachment: fixed; border-bottom-right-radius: 10%; border-bottom-left-radius: 10%;">
             <a class="navbar-brand" href="index.html ">Michaelis Games</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
                 aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -40,13 +40,14 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Jogos
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #4d087a;">
-                            <a class="dropdown-item text-muted" href="#">Blasphemous</a>
-                            <a class="dropdown-item text-muted" href="#">Bloodstained</a>
-                            <a class="dropdown-item text-muted" href="#">Dead Cells</a>
-                            <a class="dropdown-item text-muted" href="#">Hades</a>
-                            <a class="dropdown-item text-muted" href="#">Hollow Knight</a>
-                            <a class="dropdown-item text-muted" href="#">Ori</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            style="background-color: #4d087a; border-radius: 5%;">
+                            <a class="dropdown-item" style="color: rgb(162, 180, 204);" href="#">Blasphemous</a>
+                            <a class="dropdown-item" style="color: rgb(162, 180, 204);" href="#">Bloodstained</a>
+                            <a class="dropdown-item" style="color: rgb(162, 180, 204);" href="#">Dead Cells</a>
+                            <a class="dropdown-item" style="color: rgb(162, 180, 204);" href="#">Hades</a>
+                            <a class="dropdown-item" style="color: rgb(162, 180, 204);" href="#">Hollow Knight</a>
+                            <a class="dropdown-item" style="color: rgb(162, 180, 204);" href="#">Ori</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -58,22 +59,64 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Comunidade</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
+
+                    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Contato
+                                </a>
+                                <div class="dropdown-menu p-4"
+                                    style="background-color: #4d087a; color: aliceblue; border-radius: 5%;">
+                                    <form class="px-4 py-3">
+                                        <div class="form-group">
+                                            <label for="DropdownFormEmail1">Endereço de email</label>
+                                            <input type="email" class="form-control" id="DropdownFormEmail1"
+                                                placeholder="exemplo@hotmail.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="DropdownFormPassword1">Nome</label>
+                                            <input type="password" class="form-control" id="DropdownFormPassword1"
+                                                placeholder="Nome">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="DropdownFormPassword1">Assunto</label>
+                                            <input type="text" class="form-control" id="DropdownFormAssunto1" minlength="5"
+                                                placeholder="Fale conosco">
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                            <label class="form-check-label" for="dropdownCheck">
+                                                Receber E-mails?
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </form>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-light" href="#">Quer outra forma de contato?</a>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
                     <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
                 </form>
             </div>
+
         </nav>
         <!-- /NavBar -->
 
 
+
         <!-- Carousel -->
 
-        <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide mt-5" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -107,8 +150,9 @@
         <!-- /Carousel -->
 
         <!-- Jumbotron -->
-
-        <div class="jumbotron" style="background-color: #5f15b4;border-bottom-left-radius: 30%; border-bottom-right-radius: 30%; border-bottom-style: inset; border-color: blueviolet;">
+        <div class="container">
+        <div class="jumbotron"
+            style="background-color: #5f15b4;border-bottom-left-radius: 30%; border-bottom-right-radius: 30%; border-bottom-style: inset; border-color: blueviolet;">
             <h1 class="display-4 text-light text-center">A arte dos jogos 2D</h1>
             <p class="lead text-light text-center mt-5"> É maravilhoso, um universo que eu amo e pretendo explorar cada
                 vez mais,
@@ -124,82 +168,94 @@
         <!-- /Jumbotron -->
 
         <!-- Cards -->
-        <div class="container">
-            <div class="card-deck">
-                <div class="card" style="background-color: rgb(0, 0, 0); border-radius: 15%;">
-                    <img class="card-img-top" src="assets/img/cardhn.jpg" alt="Imagem de capa do card" style="border-radius: 20%;" >
-                    <div class="bg-image card shadow-1-strong"
-                        style="background-image: url('assets/img/hollowknight1600.jpg'); border-radius: 25%;">
-                        <h5 class="card-title text-light text-center">Hollow Knight</h5>
-                        <p class="card-text text-light text-center">Hollow Knight é um game de ação e aventura inspirado em clássicos como Metroid e Castlevania, mas principalmente na popular série Dark Souls. O título traz um pequeno cavaleiro em uma jornada para selar uma infecção maléfica capaz de destruir todo o seu mundo.</p>
-                    </div>
-                </div>
-                <div class="card" style="background-color: rgb(13, 115, 170); border-radius: 15%;">
-                    <img class="card-img-top" src="assets/img/origame.jpg" alt="Imagem de capa do card" style="border-radius: 20%;">
-                    <div class="bg-image card shadow-1-strong"
-                        style="background-color: #0d73aa; border-radius: 25%; border-color: #0d73aa;">
-                        <h5 class="card-title text-light text-center">Ori</h5>
-                        <p class="card-text text-light text-center"> Se divide em 2 jogos Ori and the Blind Forest e Ori and the Will of the Wisps, esses são jogos de ação e aventura com progressão e puzzles. O jogador em ambos os games controla um guardião espiritual feito de luz chamado Ori, um dos muitos filhos da Árvore do Espírito, que protegia a floresta de Nibel.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="background-color: rgb(0, 0, 0); border-radius: 15%;">
-                    <img class="card-img-top" src="assets/img/cardhades.jpg" alt="Imagem de capa do card" style="border-radius: 20%;">
-                    <div class="bg-image card shadow-1-strong"
-                        style="background-color: black; border-radius: 25%;">
-                        <h5 class="card-title text-light text-center">Hades</h5>
-                        <p class="card-text text-light text-center">Hades é um jogo eletrônico roguelike de RPG de ação. Os jogadores controlam Zagreu, o filho de Hades, enquanto ele tenta escapar do Submundo para chegar ao Monte Olimpo, às vezes auxiliado por presentes dados a ele por outros Olimpianos.</p>
-                    </div>
+
+        <div class="card-deck">
+            <div class="card" style="background-color: rgb(0, 0, 0); border-radius: 15%;">
+                <img class="card-img-top" src="assets/img/cardhn.jpg" alt="Imagem de capa do card"
+                    style="border-radius: 20%;">
+                <div class="bg-image card shadow-1-strong"
+                    style="background-image: url('assets/img/hollowknight1600.jpg'); border-radius: 20%;">
+                    <h5 class="card-title text-light text-center">Hollow Knight</h5>
+                    <p class="card-text text-light text-center">Hollow Knight é um game de ação e aventura inspirado
+                        em clássicos como Metroid e Castlevania, mas principalmente na popular série Dark Souls. O
+                        título traz um pequeno cavaleiro em uma jornada para selar uma infecção maléfica capaz de
+                        destruir todo o seu mundo.</p>
                 </div>
             </div>
-
-            <!-- /Cards -->
-
-            <!-- Texto e Video -->
-
-            <div class="row mt-5 mb-5">
-                <div class="col-md-12 text-center text-light">
-                    <h3>OST - Hollow Knight + Gods & Nightmares</h3>
-                    <p>Para começar bem essa incrivel aventura por um universo mágico, nada melhor que um tema musical
-                        para
-                        essa jornada.</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IWZktANV-D8"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-
+            <div class="card" style="background-color: rgb(13, 115, 170); border-radius: 15%;">
+                <img class="card-img-top" src="assets/img/origame.jpg" alt="Imagem de capa do card"
+                    style="border-radius: 20%;">
+                <div class="bg-image card shadow-1-strong"
+                    style="background-color: #0d73aa; border-radius: 25%; border-color: #0d73aa;">
+                    <h5 class="card-title text-light text-center">Ori</h5>
+                    <p class="card-text text-light text-center"> Se divide em 2 jogos Ori and the Blind Forest e Ori
+                        and the Will of the Wisps, esses são jogos de ação e aventura com progressão e puzzles. O
+                        jogador em ambos os games controla um guardião espiritual feito de luz chamado Ori, um dos
+                        muitos filhos da Árvore do Espírito, que protegia a floresta de Nibel.
+                    </p>
                 </div>
             </div>
-
-
-            <!-- Footer -->
-            <hr>
-            <footer>
-                <div class="row">
-                    <div class="col-md-12 d-flex justify-content-center">
-                        <a href="https://www.linkedin.com/in/lucianofn/" target="_blank"> <img class="p-3 tm-social"
-                                src="assets/img/linkedin.png" alt="Logo do linkedin"></a>
-                        <a href="https://www.instagram.com/lucian_michaeliz/" target="_blank"><img class="p-3 tm-social"
-                                src="assets/img/instagram.png" alt="Logo do instagram"></a>
-                        <a href="https://github.com/Lucianf5" target="_blank"><img class="p-3 tm-social"
-                                src="assets/img/github.png" alt="Logo do github"></a>
-
-                    </div>
+            <div class="card" style="background-color: rgb(0, 0, 0); border-radius: 15%;">
+                <img class="card-img-top" src="assets/img/cardhades.jpg" alt="Imagem de capa do card"
+                    style="border-radius: 20%;">
+                <div class="bg-image card shadow-1-strong" style="background-color: black; border-radius: 25%;">
+                    <h5 class="card-title text-light text-center">Hades</h5>
+                    <p class="card-text text-light text-center">Hades é um jogo eletrônico roguelike de RPG de ação.
+                        Os jogadores controlam Zagreu, o filho de Hades, enquanto ele tenta escapar do Submundo para
+                        chegar ao Monte Olimpo, às vezes auxiliado por presentes dados a ele por outros Olimpianos.
+                    </p>
                 </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="text-center text-light">
-                            Todos os direitos reservados: Luciano Nascimento &copy;
-                        </p>
-                    </div>
-                </div>
-
-
-
-            </footer>
-
+            </div>
         </div>
+
+        <!-- /Cards -->
+
+        <!-- Texto e Video -->
+
+        <div class="row mt-5 mb-5">
+            <div class="col-md-12 text-center text-light">
+                <h3>OST - Hollow Knight + Gods & Nightmares</h3>
+                <p>Para começar bem essa incrivel aventura por um universo mágico, nada melhor que um tema musical
+                    para
+                    essa jornada.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IWZktANV-D8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a href="https://www.linkedin.com/in/lucianofn/" target="_blank"> <img class="p-3 tm-social"
+                            src="assets/img/linkedin.png" alt="Logo do linkedin"></a>
+                    <a href="https://www.instagram.com/lucian_michaeliz/" target="_blank"><img class="p-3 tm-social"
+                            src="assets/img/instagram.png" alt="Logo do instagram"></a>
+                    <a href="https://github.com/Lucianf5" target="_blank"><img class="p-3 tm-social"
+                            src="assets/img/github.png" alt="Logo do github"></a>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center text-light">
+                        Todos os direitos reservados: Luciano Nascimento &copy;
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        </footer>
+
+
         <!-- /Footer -->
 
 
