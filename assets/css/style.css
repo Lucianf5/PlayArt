@@ -1,0 +1,24 @@
+.tm-social {
+    width: 55px;
+    height: 55px;
+}
+
+.dropdownbgcolor:hover {
+    background-color: rgb(134, 64, 167);
+    border-radius: 10%;
+  }
+
+.foothov:hover {
+    transform: scale(1.8); 
+  }
+.cardhov:hover:active {
+    transform: scale(1.2); 
+  }
+.navhov:hover{
+    transform: scale(1.2); 
+}
+
+.opac {
+         opacity : 0.8
+}
+
